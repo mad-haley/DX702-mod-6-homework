@@ -45,3 +45,7 @@ X = [noise]
 Y = 2 * X + [noise]
 
 And compute the p-value of a coefficient - in this case, the coefficient of W.  (This is the likelihood that the estimated coefficient would be as high or low as it is, given that the actual coefficient is zero.). If the p-value is less than 0.05, this ordinarily means that we judge the coefficient to be nonzero (incorrectly, in this case.)  Run the analysis 1000 times and report the best (smallest) p-value.  If the p-value is less than 0.05, does this mean the coefficient actually is nonzero?  What is the problem with repeating the analysis?
+
+Homework Reflection 8
+
+Including the code you used to solve the two coding quiz problems and write about the obstacles / challenges / insights you encountered while solving them.
