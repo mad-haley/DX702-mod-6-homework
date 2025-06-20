@@ -20,19 +20,17 @@ Write a dataset that simulates this situation.  (Show the code.) Include noise /
 
 Identify a backdoor path with one or more confounders for the relationship between deer and flowers.
 
-What is a potential problem with computing the Marginal Treatment Effect simply by comparing each untreated item to its counterfactual and taking the maximum difference? (Think of statistics here.)
-Expected answer: We are likely to find the item with the most extreme difference, which may be high simply due to randomness.
-
-Propose a solution and write some code that implements your solution
-Expected answer: maybe we could take the 90th percentile of the treatment effect and use it as a proxy for the Marginal Treatment Effect.
-
 4. Draw a diagram for a situation of your own invention.  The diagram should include at least four nodes, one confounder, and one collider.  Be sure that it is acyclic (no loops).  Which node would say is most like a treatment (X)?  Which is most like an outcome (Y)?
 
 Homework Reflection 6
 
 1. What is a potential problem with computing the Marginal Treatment Effect simply by comparing each untreated item to its counterfactual and taking the maximum difference?  (Hint: think of statistics here.  Consider that only the most extreme item ends up being used to estimate the MTE.  That's not necessarily a bad thing; the MTE is supposed to come from the untreated item that will produce the maximum effect.  But there is nevertheless a problem.)
+Possible answer: We are likely to find the item with the most extreme difference, which may be high simply due to randomness.
+(Please explain / justify this answer, or give a different one if you can think of one.)
 
 2. Propose a solution that remedies this problem and write some code that implements your solution.  It's very important here that you clearly explain what your solution will do.
+Possible answer: maybe we could take the 90th percentile of the treatment effect and use it as a proxy for the Marginal Treatment Effect.
+(Either code this answer or choose a different one.)
 
 Homework Reflection 7
 
@@ -44,8 +42,12 @@ W = [noise]
 X = [noise]
 Y = 2 * X + [noise]
 
-And compute the p-value of a coefficient - in this case, the coefficient of W.  (This is the likelihood that the estimated coefficient would be as high or low as it is, given that the actual coefficient is zero.). If the p-value is less than 0.05, this ordinarily means that we judge the coefficient to be nonzero (incorrectly, in this case.)  Run the analysis 1000 times and report the best (smallest) p-value.  If the p-value is less than 0.05, does this mean the coefficient actually is nonzero?  What is the problem with repeating the analysis?
+And compute the p-value of a coefficient - in this case, the coefficient of W.  
+(This is the likelihood that the estimated coefficient would be as high or low as it is, given that the actual coefficient is zero.)
+If the p-value is less than 0.05, this ordinarily means that we judge the coefficient to be nonzero (incorrectly, in this case.)
+Run the analysis 1000 times and report the best (smallest) p-value.  
+If the p-value is less than 0.05, does this mean the coefficient actually is nonzero?  What is the problem with repeating the analysis?
 
 Homework Reflection 8
 
-Including the code you used to solve the two coding quiz problems and write about the obstacles / challenges / insights you encountered while solving them.
+Include the code you used to solve the two coding quiz problems and write about the obstacles / challenges / insights you encountered while solving them.
