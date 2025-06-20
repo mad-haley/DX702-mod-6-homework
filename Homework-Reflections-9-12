@@ -1,1 +1,10 @@
-9. 
+Homework Reflection 9
+
+1. Write some code that will use a simulation to estimate the standard deviation of the coefficient when there is heteroskedasticity.  
+Compare these standard errors to those found via statsmodels OLS or a similar linear regression model.
+
+2. Write some code that will use a simulation to estimate the standard deviation of the coefficient when errors are highly correlated / non-independent.
+Compare these standard errors to those found via statsmodels OlS or a similar linear regression model.
+
+Show that if the correlation between coefficients is high enough, then the estimated standard deviation of the coefficient, using bootstrap errors, 
+might not match that found by a full simulation of the Data Generating Process.  (This can be fixed if you have a huge amount of data for the bootstrap simulation.)
