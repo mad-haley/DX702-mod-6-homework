@@ -8,3 +8,15 @@ Compare these standard errors to those found via statsmodels OlS or a similar li
 
 Show that if the correlation between coefficients is high enough, then the estimated standard deviation of the coefficient, using bootstrap errors, 
 might not match that found by a full simulation of the Data Generating Process.  (This can be fixed if you have a huge amount of data for the bootstrap simulation.)
+
+Homework Reflection 11
+
+1. Construct a dataset for an event study where the value, derivative, and second derivative of a trend all change discontinuously (suddenly) after an event.
+Build a model that tries to decide whether the event is real (has a nonzero effect) using:
+(a) only the value,
+(b) the value, derivative, and second derivative.
+Which of these models is better at detecting and/or quantifying the impact of the event?  (What might "better" mean here?)
+
+2. Construct a dataset in which there are three groups whose values each increase discontinuously (suddenly) by the same amount at a shared event; they change in parallel
+over time, but they have different starting values.  Create a model that combines group fixed effects with an event study, as suggested in the online reading.
+Explain what you did, how the model works, and how it accounts for both baseline differences and the common event effect.
